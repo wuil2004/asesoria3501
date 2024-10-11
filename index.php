@@ -7,22 +7,24 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <h1>Soy un encabezado de html</h1>
-    <?php
+    <section class="content-form">
+        <h1>Soy un encabezado de html</h1>
+        <?php
           #Script php
           //tambien soy un comentario de una linea
           /*soy un comentario
           de multiples de lineas*/ 
           //Las variables simpre comiensan con $
           //PHP no es tipado, el tipo de dato se crea con la asignacion
-        $nombre = "TESJI";
-        $mensaje = "mi primera aplicacion en PHP";
-        echo "<h2>Hola mundo desde PHp</h2>";
-        echo "<h3>bienvenido $nombre</h3><h4>$mensaje</h4>"
-    ?>
-    <ul>
-        <a href="pagina2.php"><li>Formularios</li></a>
-    </ul>
+            $nombre = "TESJI";
+            $mensaje = "mi primera aplicacion en PHP";
+            echo "<h2>Hola mundo desde PHP</h2>";
+            echo "<h3>bienvenido $nombre</h3><h4>$mensaje</h4>"
+        ?>
+        <ul>
+            <a href="pagina2.php"><li>Formularios</li></a>
+        </ul>
+    </section>
 
 </body>
 </html>
