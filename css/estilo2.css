@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Agrega este estilo para un mejor control del tamaño */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #000428, #004e92); /* Gradiente de fondo */
+    background-position: center;
+    background-size: cover;
+}
+
+.content-form {
+    position: relative;
+    width: 400px;
+    height: auto; /* Cambia a auto para que se ajuste al contenido */
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    border: 2px solid rgb(4, 68, 242);
+    border-radius: 20px;
+    backdrop-filter: blur(13px);
+    margin: auto;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 10px 15px 40px rgba(243, 229, 245, 0.6); /* Sombra más sutil */
+    transition: transform 0.3s; /* Añadir transición para el hover */
+}
+
+.content-form:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+}
+
+.cajas-texto {
+    width: 100%; /* Ajusta al 100% del contenedor */
+    padding: 10px; /* Aumenta el padding para mayor comodidad */
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    color: #f7f6f6;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente blanco */
+    outline: none;
+    transition: border-color 0.5s, background-color 0.5s; /* Agrega transición para el fondo */
+}
+
+.cajas-texto:focus {
+    border-color: rgb(172, 232, 154); /* Cambia el color del borde al enfocar */
+    background-color: rgba(255, 255, 255, 0.2); /* Cambia el fondo al enfocar */
+}
+
+select {
+    width: 100%;
+    padding: 10px; /* Aumenta el padding para mayor comodidad */
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 3px double #fcfcfc;
+    color: #fff; /* Cambia a blanco para mejor contraste */
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: background-color 0.3s; /* Efecto de transición para el fondo */
+}
+
+select:hover {
+    background: #3d373a; /* Cambia el color de fondo al pasar el cursor */
+}
+
+.botones {
+    padding: 15px 20px; /* Espaciado interno (vertical y horizontal) */
+    border: none; /* Eliminar el borde predeterminado */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: rgba(255, 255, 255, 0.1);/* Color de fondo */
+    color: white; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves para efectos */
+    margin: 5px; /* Espacio entre botones */
+    margin-left: 35px;
+  
+}
+
+.butones:hover {
+    background-color: rgb(232, 154, 154); /* Color de fondo al pasar el cursor */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
