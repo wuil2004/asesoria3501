@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="css/estilo2.css">
 </head>
 <body>
+
+    <div class="aneis">
+        <i style="--clr:#00ff0a;"></i>
+        <i style="--clr:#ff0057;"></i>
+        <i style="--clr:#fffd44;"></i>
+    </div>
+
     <section class="content-form">
 
         <h1>FOMULARIOS CON PHP</h1>
