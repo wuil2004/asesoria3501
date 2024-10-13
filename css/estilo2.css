@@ -16,7 +16,7 @@ body {
   width: 100%;
   overflow: hidden;
 }
-.aneis,.content-form {
+.aneis {
     position: relative;
     width: 500px;
     height: 500px;
