@@ -8,13 +8,13 @@
 </head>
 <body>
 
-    <div class="aneis">
-        <i style="--clr:#00ff0a;"></i>
-        <i style="--clr:#ff0057;"></i>
-        <i style="--clr:#fffd44;"></i>
-    </div>
-
     <section class="content-form">
+
+        <div class="aneis">
+            <i style="--clr:#00ff0a;"></i>
+            <i style="--clr:#ff0057;"></i>
+            <i style="--clr:#fffd44;"></i>
+        
 
         <h1>FOMULARIOS CON PHP</h1>
 
@@ -34,6 +34,7 @@
             <button class="botones">Registrar</button>
             <button class="botones"><Nav>Nuevo</Nav></button>
         </form>
+        </div>
     </section>
 
 

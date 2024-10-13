@@ -1,57 +1,112 @@
+/* Estilos de los anillos */
 .aneis {
-    position: absolute;
+    position: relative; /* Se añade relative para poder usar absolute en los hijos */
     width: 500px;
     height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto; /* Centra el contenedor de los anillos en la página */
   }
   
   .aneis i {
     position: absolute;
-    inset: 0;
-    border: 2px solid #fff;
-    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    animation: animate 2s linear infinite;
+    top: 0;
+    left: 0;
   }
   
   .aneis i:nth-child(1) {
-    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-    animation: animate 6s linear infinite;
+    --clr: #00ff0a;
+    filter: drop-shadow(0 0 5px var(--clr)) drop-shadow(0 0 15px var(--clr)) drop-shadow(0 0 30px var(--clr));
   }
   
   .aneis i:nth-child(2) {
-    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
-    animation: animate 4s linear infinite;
+    --clr: #ff0057;
+    animation-delay: -1s;
+    filter: drop-shadow(0 0 5px var(--clr)) drop-shadow(0 0 15px var(--clr)) drop-shadow(0 0 30px var(--clr));
   }
   
   .aneis i:nth-child(3) {
-    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
-    animation: animate2 10s linear infinite;
-  }
-  
-  .aneis:hover i {
-    border: 6px solid var(--clr);
-    filter: drop-shadow(0 0 20px var(--clr));
+    --clr: #fffd44;
+    animation-delay: -0.5s;
+    filter: drop-shadow(0 0 5px var(--clr)) drop-shadow(0 0 15px var(--clr)) drop-shadow(0 0 30px var(--clr));
   }
   
   @keyframes animate {
     0% {
-      transform: rotate(0deg);
+      transform: scale(0.5) rotate(0deg);
     }
     100% {
-      transform: rotate(360deg);
+      transform: scale(1) rotate(360deg);
     }
   }
   
-  @keyframes animate2 {
-    0% {
-      transform: rotate(360deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
+  /* Formulario dentro de los anillos */
+  .aneis form {
+    position: absolute; /* Asegura que esté dentro del contenedor de los anillos */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Compensa el posicionamiento para centrar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    z-index: 1; /* Asegura que el formulario esté sobre los anillos */
   }
+  
+  h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  /* Estilo para las cajas de texto */
+  .cajas-texto {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    outline: none;
+  }
+  
+  .opcion {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    outline: none;
+  }
+  
+  /* Botones */
+  .botones {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #ff0057, #fffd44);
+    color: #fff;
+    transition: 0.3s ease;
+  }
+  
+  .botones:hover {
+    background: linear-gradient(90deg, #fffd44, #ff0057);
+  }
+  
+  /* Ajuste del fondo general */
+  body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+  
   
